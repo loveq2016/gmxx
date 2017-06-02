@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>压力测试</title>
+    <link href="common.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+    	$(function (){
+        	$('#paper1').html(getQueryString("paper1"));
+        	$('#paper2').html(getQueryString("paper2"));
+        });
+    </script>
+</head>
+<body>
+<div class="content" style="padding-top:10vw">
+	<image src="images/report.png" style="width:20vw;margin-bottom:-5vw"></image>
+	<div class="big-dialog">
+		<div style="text-align:center" class="text-big">压力测试结果</div>
+		<div class="result" id="paper1">您的压力过大去，要注意调节哦</div>
+		<div class="big-dialog-split"></div>
+		<div style="text-align:center;padding-top:5vw" class="text-big">抑郁测试结果</div>
+		<div class="result" id="paper2">您的压力过大去，要注意调节哦</div>
+	</div>
+	<p>感谢您参与本次测试，我们为您准备了抽奖环节，有小米盒子等你来拿，快过来试试你的运气吧！</p>
+	<div style="height:50px"></div>
+	<button class="a-btn aligncenter" type="button"  onclick="javascript:window.location.href='choujiang.html'">试试运气</button>
+</div>
+</body>
+</html>
